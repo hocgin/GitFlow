@@ -12,19 +12,19 @@ git push -u origin master
 
 # 创建 develop 分支
 git checkout -b develop
-git push --set-upstream origin develop
+git push -u origin develop
 # 创建 feature-n0001 分支
 git checkout -b feature-n0001
-git push --set-upstream origin feature-n0001
+git push -u origin feature-n0001
 
 # 修改 README.md 后
 git add README.md
 git commit -m "feature 进行功能开发"
-git push --set-upstream origin feature-n0001
+git push -u origin feature-n0001
 # 再次修改 README.md 后
 git add README.md
 git commit -m "feature 研发进度更新"
-git push --set-upstream origin feature-n0001
+git push -u origin feature-n0001
 
 # 切换到 develop, 修改 README.md 后
 git checkout develop
